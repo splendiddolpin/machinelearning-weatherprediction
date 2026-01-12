@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Prediction Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #4a4a4a;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .step {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 6px solid #6c63ff;
+        }
+
+        .step h4 {
+            margin-top: 0;
+            color: #6c63ff;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta a {
+            text-decoration: none;
+            background: #6c63ff;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .cta a:hover {
+            background: #574fd6;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- HERO -->
+        <div class="hero">
+            <h1>🌦️ Weather Prediction System</h1>
+            <p>Prediksi apakah besok akan hujan berdasarkan data cuaca hari ini menggunakan Machine Learning</p>
+        </div>
+
+        <!-- ABOUT -->
+        <div class="card">
+            <h3>📌 Tentang Website</h3>
+            <p>
+                Website ini menggunakan model Machine Learning yang dilatih dari data cuaca Australia
+                untuk memprediksi kemungkinan hujan esok hari.  
+                Prediksi dilakukan berdasarkan parameter cuaca utama yang umum digunakan dalam meteorologi.
+            </p>
+        </div>
+
+        <!-- STEPS -->
+        <div class="card">
+            <h3>🧭 Cara Menggunakan Website</h3>
+
+            <div class="steps">
+                <div class="step">
+                    <h4>1️⃣ Masukkan Data Cuaca</h4>
+                    <ul>
+                        <li>Humidity jam</li>
+                        <li>Pressure jam</li>
+                        <li>Suhu jam</li>
+                        <li>Kecepatan</li>
+                        <li>Status hujan hari ini?</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <h4>2️⃣ Klik Tombol Prediksi</h4>
+                    <p>
+                        Setelah semua data diisi, klik tombol <strong>Prediksi</strong>
+                        untuk menjalankan model Machine Learning.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <h4>3️⃣ Lihat Hasil</h4>
+                    <p>
+                        Sistem akan menampilkan hasil:
+                        <strong>🌧️ HUJAN</strong> atau <strong>☀️ TIDAK HUJAN</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- INPUT INFO -->
+        <div class="card">
+            <h3>📊 Keterangan Input</h3>
+            <ul>
+                <li><strong>Humidity:</strong> Kelembapan udara (%)</li>
+                <li><strong>Pressure:</strong> Tekanan udara (hPa)</li>
+                <li><strong>Temperature:</strong> Suhu udara (°C)</li>
+                <li><strong>Wind Speed:</strong> Kecepatan angin (km/h)</li>
+                <li><strong>Rain Today:</strong> Apakah hari ini hujan</li>
+            </ul>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta">
+            <a href="/predict">🔮 Mulai Prediksi Sekarang</a>
+        </div>
+
+        <footer>
+            © 2026 Weather Prediction App · Flask & Machine Learning
+        </footer>
+
+    </div>
+</body>
+</html>
